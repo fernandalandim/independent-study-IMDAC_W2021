@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/** Mobile First - CSS Styles **/
+body {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(125, 255, 175);
+}
+
+#app {
+    width: 70%;
+    height: auto;
+    margin: 100px auto;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.careers {
+    width: 100%;
+    margin: 25px;
+}
+
+footer {
+    width: 100%;
+    margin: auto auto auto 0px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contentStudent,
+.contentCourse {
+    text-align: center;
+    margin: auto;
+}
+
+footer p {
+    font-size: 1.1rem;
+    line-height: .8rem;
+}
+
+/** Breakpoint for larger screens **/
+@media (min-width: 1024px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+        line-height: 1.1rem;
+    }
+
+}
