@@ -6,14 +6,14 @@ body {
     margin: auto;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(125, 255, 175);
+    background-color: #006341;
 }
 
 #app {
     width: 70%;
     height: auto;
     margin: 100px auto;
-    background-color: rgb(228, 228, 228);
+    background-color: #e2e2e2;
     padding: 20px;
     border-radius: 8px;
 }
@@ -27,7 +27,41 @@ form {
 
 .careers {
     width: 100%;
-    margin: 25px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.course-list,
+.courses {
+    display: grid;
+    grid-template-columns: 60% 25% 15%;
+}
+
+.course-list p {
+    font-weight: 900;
+}
+
+.courses {
+    background-color: #ffffff;
+}
+
+/* The style will be added only to the even-numbered lines */
+.courses:nth-child(even) {
+    background-color: #cccccc;
+}
+
+.courses div {
+    padding: 10px 2px;
+}
+
+.course-name {
+    font-weight: 500;
+}
+
+.course-code,
+.course-level {
+    text-align: center;
 }
 
 footer {
@@ -41,26 +75,31 @@ footer {
     color: #ffffff;
 }
 
-.contentStudent,
-.contentCourse {
+footer p {
+    font-size: 1rem;
+    line-height: .8rem;
+}
+
+.content-student,
+.content-course {
     text-align: center;
     margin: auto;
 }
 
-footer p {
-    font-size: 1.1rem;
-    line-height: .8rem;
-}
-
 /** Breakpoint for larger screens **/
 @media (min-width: 1024px) {
+
+    #app {
+        width: 60%;
+    }
+
     footer {
         grid-template-columns: 1fr 1fr;
     }
 
     footer p {
-        font-size: 1.3rem;
-        line-height: 1.1rem;
+        font-size: 1.1rem;
+        line-height: 1rem;
     }
 
 }

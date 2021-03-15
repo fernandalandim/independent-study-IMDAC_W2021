@@ -12,29 +12,52 @@
 
 <body>
     <div id="app" class="container">
-        <div class="textContainer">
-            <h1>When I graduate I wanna be a...</h1>
+        <div class="cta">
+            <h2>When I graduate from the IMD program I wanna be a...</h2>
+        </div>
+        <div class="instructions">
             <p>Use the menu below to find out which courses are necessary to pursue your chosen career path.</p>
         </div>
+        
         <form>
-            <select class="careers">
-                <option value="">UI & UX Designer</option>
-                <option value="">Video Producer</option>
-                <option value="">Front-end Developer</option>
-                <option value="">Back-end Developer</option>
-                <option value="">Motion Graphics Designer</option>
-                <option value="">Project Manager</option>
+            <select class="careers" v-model="sort">
+                <option v-for="career in careers" value="career"> {{ career }} </option>
             </select>
         </form>
-        <div>course list</div>
+        <div class="result">
+            <h3>Here</h3>
+            <div></div>
+            
+        </div>
+        <div>
+            <h3>Complete Course list</h3>
+            <div class="course-list">
+                <div class="course-name">
+                    <p>Course Name</p>
+                </div>
+                <div class="course-code">
+                    <p>Course Code</p>
+                </div>
+                <div class="course-level">
+                    <p>
+                        Level
+                    </p>
+                </div>
+            </div>
+            <div class="courses" v-for="course in courses">
+                <div class="course-name">{{ course.name }}</div>
+                <div class="course-code">{{ course.code }}</div>
+                <div class="course-level">{{ course.level }}</div>
+            </div>
+        </div>
     </div>
     <footer>
-        <div class="contentStudent">
+        <div class="content-student">
             <p>Fernanda Granja Landim</p>
             <p>Interactive Media Design</p>
             <p>Level 4</p>
         </div>
-        <div class="contentCourse">
+        <div class="content-course">
             <p>MTM6404 - Web Production</p>
             <p>Instructor Michael Eisenbraun</p>
             <p>Section 1</p>
