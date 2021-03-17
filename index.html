@@ -18,19 +18,22 @@
         <div class="instructions">
             <p>Use the menu below to find out which courses are necessary to pursue your chosen career path.</p>
         </div>
-        
+
         <form>
-            <select class="careers" v-model="sort">
-                <option v-for="career in careers" value="career"> {{ career }} </option>
+            <select class="careers" v-model="sort" @change="onChange()">
+                <option v-for="career in careers" :value="career.value"> {{ career.name }} </option>
             </select>
         </form>
         <div class="result">
-            <h3>Here</h3>
-            <div></div>
-            
+            <h3>The courses that prepared you for this path were...</h3>
+            <!-- <div class="courses" v-for="course in showingCourses">
+                <div class="course-name">{{ course.name }}</div>
+                <div class="course-code">{{ course.code }}</div>
+                <div class="course-level">{{ course.level }}</div>
+            </div> -->
         </div>
-        <div>
-            <h3>Complete Course list</h3>
+        <div class="complete-list">
+            <!-- <h3>Complete Course list</h3> -->
             <div class="course-list">
                 <div class="course-name">
                     <p>Course Name</p>

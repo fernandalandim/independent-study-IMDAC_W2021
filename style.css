@@ -32,6 +32,12 @@ form {
     border-radius: 5px;
 }
 
+.complete-list {
+    border-top: 2px dotted black;
+    margin-top: 5%;
+    width: 100%;
+}
+
 .course-list,
 .courses {
     display: grid;
