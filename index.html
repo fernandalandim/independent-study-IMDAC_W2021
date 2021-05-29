@@ -26,33 +26,29 @@
         </form>
         <div class="result">
             <h3>The courses that prepared you for this path were...</h3>
-            <!-- <div class="courses" v-for="course in showingCourses">
-                <div class="course-name">{{ course.name }}</div>
-                <div class="course-code">{{ course.code }}</div>
-                <div class="course-level">{{ course.level }}</div>
-            </div> -->
-        </div>
-        <div class="complete-list">
-            <!-- <h3>Complete Course list</h3> -->
-            <div class="course-list">
-                <div class="course-name">
-                    <p>Course Name</p>
+            <div class="complete-list">
+
+                <div class="course-list">
+                    <div class="course-name">
+                        <p>Course Name</p>
+                    </div>
+                    <div class="course-code">
+                        <p>Course Code</p>
+                    </div>
+                    <div class="course-level">
+                        <p>
+                            Level
+                        </p>
+                    </div>
                 </div>
-                <div class="course-code">
-                    <p>Course Code</p>
-                </div>
-                <div class="course-level">
-                    <p>
-                        Level
-                    </p>
+                <div class="courses" v-for="course in showingCourses">
+                    <div class="course-name">{{ course.name }}</div>
+                    <div class="course-code">{{ course.code }}</div>
+                    <div class="course-level">{{ course.level }}</div>
                 </div>
             </div>
-            <div class="courses" v-for="course in courses">
-                <div class="course-name">{{ course.name }}</div>
-                <div class="course-code">{{ course.code }}</div>
-                <div class="course-level">{{ course.level }}</div>
-            </div>
         </div>
+
     </div>
     <footer>
         <div class="content-student">

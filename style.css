@@ -32,12 +32,6 @@ form {
     border-radius: 5px;
 }
 
-.complete-list {
-    border-top: 2px dotted black;
-    margin-top: 5%;
-    width: 100%;
-}
-
 .course-list,
 .courses {
     display: grid;
@@ -50,6 +44,7 @@ form {
 
 .courses {
     background-color: #ffffff;
+    padding-left: 5px;
 }
 
 /* The style will be added only to the even-numbered lines */
